@@ -1,20 +1,20 @@
 pipeline {
-    agent { docker { image 'maven:latest' } }
+    agent any
     
     stages {
         stage('Build') {
             steps {
-                sh 'ls -l'
+                sh 'echo "Build"'
             }
         }
         stage('Test') {
             steps {
-                sh 'ls -l'
+                sh 'echo "Test"'
             }
         }
         stage('Deploy') {
             steps {
-                sh 'ls -l'
+                sh 'echo "Deploy"'
             }
         }
     }
