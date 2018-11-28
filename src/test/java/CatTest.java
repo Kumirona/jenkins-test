@@ -12,6 +12,6 @@ public class CatTest {
 
     @Test
     public void catNameTest() {
-        assertEquals("lam", cat.getName());
+        assertEquals("lama", cat.getName());
     }
 }
